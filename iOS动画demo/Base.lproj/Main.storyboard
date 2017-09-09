@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rmQ-c4-6o4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj4-v3-p2D">
+                                <rect key="frame" x="81" y="158" width="31" height="30"/>
+                                <state key="normal" title="平移"/>
+                                <connections>
+                                    <action selector="pingyiClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QcW-Tt-LYl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INg-Un-oJb">
+                                <rect key="frame" x="184" y="158" width="31" height="30"/>
+                                <state key="normal" title="放大"/>
+                                <connections>
+                                    <action selector="fangdaClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqW-ED-sHa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-Y3-HHC">
+                                <rect key="frame" x="285" y="158" width="31" height="30"/>
+                                <state key="normal" title="选择"/>
+                                <connections>
+                                    <action selector="xuanzeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4B-WS-1cU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-hz-pd4">
+                                <rect key="frame" x="99" y="270" width="200" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9gt-Uv-Etf"/>
+                                    <constraint firstAttribute="height" constant="181" id="Bue-bO-iXY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="I3R-Y3-HHC" secondAttribute="trailing" constant="43" id="ADi-xw-tAf"/>
+                            <constraint firstItem="Tj4-v3-p2D" firstAttribute="baseline" secondItem="INg-Un-oJb" secondAttribute="baseline" id="C1W-6I-qTr"/>
+                            <constraint firstItem="Tj4-v3-p2D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="Gbg-bA-S5y"/>
+                            <constraint firstItem="I3R-Y3-HHC" firstAttribute="leading" secondItem="INg-Un-oJb" secondAttribute="trailing" constant="70" id="Mdy-gA-9Qt"/>
+                            <constraint firstItem="7j9-hz-pd4" firstAttribute="centerX" secondItem="INg-Un-oJb" secondAttribute="centerX" id="PPP-mc-lAW"/>
+                            <constraint firstItem="INg-Un-oJb" firstAttribute="leading" secondItem="Tj4-v3-p2D" secondAttribute="trailing" constant="72" id="Uef-2b-3q8"/>
+                            <constraint firstItem="I3R-Y3-HHC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="dyA-4G-fOo"/>
+                            <constraint firstItem="7j9-hz-pd4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="gOw-yS-o4j"/>
+                            <constraint firstItem="INg-Un-oJb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="lca-EL-JL5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7j9-hz-pd4" secondAttribute="bottom" constant="216" id="vAf-hi-YJV"/>
+                            <constraint firstItem="Tj4-v3-p2D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="65" id="vcR-LZ-y2Y"/>
+                            <constraint firstItem="INg-Un-oJb" firstAttribute="baseline" secondItem="I3R-Y3-HHC" secondAttribute="baseline" id="zhZ-vr-pGl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="aaa-ww-QFn"/>
+                    <connections>
+                        <outlet property="demoimg" destination="7j9-hz-pd4" id="icY-Ha-4EJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VKw-rq-RLx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rmQ-c4-6o4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kxU-9n-9Tc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HF7-Du-snM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdf-RL-AYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="791.15442278860576"/>
+        </scene>
+    </scenes>
+</document>
